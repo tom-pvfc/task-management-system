@@ -2,7 +2,7 @@
 
 ##Getting started 
 1. install modules - npm install 
-2. run code with node fuse watch or npm run watch
+2. run code with node fuse watch
 
 ##Decisions 
 - Created data in the app.tsx and storing the dataset into redux to use in pages within the site
