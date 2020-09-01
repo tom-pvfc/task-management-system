@@ -1,0 +1,35 @@
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+
+    &__item{
+        margin: 5px 15px;
+        cursor: pointer;
+
+        // background-color: $color-3;
+        padding: 5px 15px;
+        border-radius: 15px;
+
+        color: $color-1;
+
+        width: auto;
+
+        font-size: 22px;
+
+        text-align: center;
+
+        &:hover{
+            opacity: 0.6;
+        }
+    }
+}
+
+@include SmallDevice {
+    .nav-menu {
+    }
+}
+
+@include MediumDevice {
+    .nav-menu {
+    }
+}

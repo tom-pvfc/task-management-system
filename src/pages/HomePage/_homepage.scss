@@ -1,0 +1,103 @@
+/*************************/
+/////// GENERAL VARS //////
+/*************************/
+
+//TODO vars
+
+/*************************/
+/////// CUSTOM VARS /////// 
+/*************************/
+
+//TODO vars
+
+/*************************/
+///// TYPOGRAPHY VARS /////
+/*************************/
+
+//TODO vars
+
+/*************************/
+///// COMPONENT CODE //////
+/*************************/
+.home-page{
+
+  &__wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+
+    &--btns{
+      background-color: $color-5;
+      padding: 3px 8px;
+      border-radius: 5px;
+      min-width: 250px;
+      height: 55px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
+      text-align:center;
+      color:$color-2;
+      cursor: pointer;
+      &:hover{
+        background-color: $color-4;
+        color: $color-1;
+      }
+    }
+  }
+
+  .table{
+    &__body{
+      
+    }
+    &__header{
+      margin-top: 50px;
+        width: 400px;
+          display: flex;
+          justify-content: space-between;
+          &--item{
+              flex:1;
+              min-width: 160px;
+              text-align: center;
+              font-weight: bold;
+          }
+      }
+  }
+
+  .task-item{
+      display: flex;
+      justify-content: space-around;
+    width: 400px;
+
+    p,div{
+      min-width: 160px;
+    }
+
+  }
+    
+}
+
+@include SmallDevice{
+    .home-page{
+    }
+}
+
+
+@include MediumDevice{
+    .home-page{
+
+    }
+}
+
+@include OnEmbedDevice(){
+    .home-page{
+
+    }
+}
+
+/*************************/
+/////// CUSTOM CODE /////// 
+/*************************/
+//TODO code

@@ -1,0 +1,44 @@
+.main-layout{
+    &__wrapper{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        &--title{
+          
+        }
+
+        &--header{
+            background-color: $color-1;
+        }
+    }
+}
+
+@include SmallDevice{
+    .about-page{
+    }
+}
+
+
+@include MediumDevice{
+    .about-page{
+        &__wrapper{
+            width: 80%;
+            margin: 0 auto;
+            &--banner{
+             
+            }
+        }
+    }
+}
+
+@include OnEmbedDevice(){
+    .about-page{
+
+    }
+}
+
+/*************************/
+/////// CUSTOM CODE /////// 
+/*************************/
+//TODO code
