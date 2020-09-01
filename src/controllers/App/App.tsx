@@ -79,7 +79,7 @@ const DATA =
         assignedTo: "",
         taskSummary: "task 2",
         taskDescription: "desc 2",
-        taskStatus: "Not Started",
+        taskStatus: "In Progress",
         priority: "LOW"
     },
     {
@@ -103,8 +103,8 @@ const DATA =
         assignedTo: "",
         taskSummary: "task 4",
         taskDescription: "desc 4",
-        taskStatus: "Not Started",
-        priority: "LOW"
+        taskStatus: "Completed",
+        priority: "HIGH"
     },
     {
         key: 4,

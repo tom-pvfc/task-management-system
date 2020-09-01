@@ -30,6 +30,13 @@
         &--title{
           
         }
+        &--form{
+            display: flex;
+            flex-direction: column;
+            label{
+                width: 150px;
+            }
+        }
     }
 
   
@@ -47,6 +54,8 @@
         &__wrapper{
             width: 80%;
             margin: 0 auto;
+            margin-top: 20px;
+
             &--banner{
              
             }

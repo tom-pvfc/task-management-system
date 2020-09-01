@@ -46,21 +46,30 @@
         color: $color-1;
       }
     }
+    &--table{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
+      align-items: center;
+      
+    }
   }
 
   .table{
     &__body{
-      
+      width: auto;
     }
     &__header{
       margin-top: 50px;
-        width: 400px;
+        width: auto;
           display: flex;
           justify-content: space-between;
           &--item{
               flex:1;
               min-width: 160px;
-              text-align: center;
+              text-align: left;
               font-weight: bold;
           }
       }

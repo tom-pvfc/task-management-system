@@ -8,15 +8,15 @@ const Banner = () => {
             <div className="banner__wrapper">
                 <LinkButton href={"/#"}>
                     <div className="banner__wrapper--circle">
-                        <img src={RES_URL + "img/test.jpg"} />
+                        <img src={RES_URL + "img/home.png"} />
                         <p>
                             Home
                         </p>
                     </div>
                 </LinkButton>
                 <LinkButton href={"/#about"}>
-                    <div className="banner__wrapper--circle">
-                        <img src={RES_URL + "img/test.jpg"} />
+                    <div className="banner__wrapper--circle banner__wrapper--dark">
+                        <img src={RES_URL + "img/about.jpg"} />
                         <p>
                             About
                         </p>

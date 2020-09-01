@@ -16,13 +16,19 @@ export interface TaskPageProps extends ReactRedux.DispatchProp<any>, RouteCompon
 const INIT_STATE: TaskPageState = {
     taskId: -1,
     isNew: true,
-    task: null
+    task: null,
+    summary: "",
+    status: "",
+    priority: ""
 }
 
 export interface TaskPageState {
     taskId: number;
     isNew: boolean;
     task: iTaskData;
+    summary: string;
+    status: string;
+    priority: string;
 }
 
 export class TaskPage extends React.Component<TaskPageProps, TaskPageState> {
@@ -51,10 +57,35 @@ export class TaskPage extends React.Component<TaskPageProps, TaskPageState> {
     
     setTask = (paramKey: number) => {
         // console.log("current task " , this.props.data[paramKey])
+        let data = this.props.data[paramKey];
         this.setState({
-           task: this.props.data[paramKey]
+           task: data,
+           summary: data.taskSummary,
+           status: data.taskStatus,
+           priority: data.priority
         })
     }
+
+    handleChange = (event) => {
+        console.log("change " , event.target.name)
+        switch(event.target.name){
+            case "summary":
+                this.setState({
+                    summary: event.target.value
+                });
+                break;
+            case "status":
+                this.setState({
+                    status: event.target.value
+                });
+                break;
+            case "priority":
+                this.setState({
+                    priority: event.target.value
+                });
+                break;
+        }
+      }
 
     render() {
         const { props, state } = this;
@@ -83,6 +114,25 @@ export class TaskPage extends React.Component<TaskPageProps, TaskPageState> {
                                 new task name
                             </div>
                         }
+                        <div className="task-page__wrapper--form">
+                            <label>
+                                Summary:
+                                <input type="text" name="summary" value={state.summary} onChange={this.handleChange} />
+                            </label>
+                            <label>
+                                Status:
+                                <input type="text" name="status" value={state.status}  onChange={this.handleChange}/>
+                            </label>
+                            <label>
+                                Priority:
+                                <input type="text" name="priority" value={state.priority}  onChange={this.handleChange} />
+                            </label>
+                        </div>
+                        <div className="task-page__wrapper--save">
+                            <LinkButton href="/#">
+                              Save
+                            </LinkButton>
+                        </div>
                         <div className="task-page__wrapper--back">
                             <LinkButton href="/#">
                               Back
