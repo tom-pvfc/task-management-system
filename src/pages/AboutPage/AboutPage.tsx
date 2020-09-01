@@ -37,7 +37,12 @@ export class AboutPage extends React.Component<AboutPageProps, AboutPageState> {
                             How to use the task management system
                         </h1>
                         <p className="about-page__wrapper--copy">
-                            Nullam lobortis sed velit quis sagittis. Quisque vehicula felis non mi malesuada, eget eleifend lectus consequat. Morbi laoreet vel mi in tincidunt. Duis rhoncus leo sed massa hendrerit lacinia. Vestibulum varius, eros non bibendum tristique, ipsum felis posuere turpis, id imperdiet ipsum ante eu eros. Nunc eu rutrum dolor. Nunc molestie mi a metus finibus sollicitudin. Nunc vitae tellus sed nunc cursus facilisis. Nulla dignissim tellus justo, eget congue arcu molestie id. Nulla ut nisi consectetur, volutpat nibh eget, tempus sapien. Quisque accumsan nec lectus eu tincidunt. Praesent vehicula aliquet lorem, quis dignissim eros varius non. Fusce eleifend, lectus id ornare rutrum, elit justo sodales eros, eu egestas sapien dolor vel ante. Sed efficitur porta odio.
+                            Nullam lobortis sed velit quis sagittis. Quisque vehicula felis non mi malesuada, eget eleifend lectus consequat. 
+                            Morbi laoreet vel mi in tincidunt. Duis rhoncus leo sed massa hendrerit lacinia. Vestibulum varius, eros non bibendum tristique,
+                             ipsum felis posuere turpis, id imperdiet ipsum ante eu eros. Nunc eu rutrum dolor. Nunc molestie mi a metus finibus sollicitudin.
+                              Nunc vitae tellus sed nunc cursus facilisis. Nulla dignissim tellus justo, eget congue arcu molestie id. Nulla ut nisi consectetur,
+                               volutpat nibh eget, tempus sapien. Quisque accumsan nec lectus eu tincidunt. Praesent vehicula aliquet lorem, quis dignissim eros 
+                               varius non. Fusce eleifend, lectus id ornare rutrum, elit justo sodales eros, eu egestas sapien dolor vel ante. Sed efficitur porta odio.
                         </p>
                     </div>
                 </MainLayout>

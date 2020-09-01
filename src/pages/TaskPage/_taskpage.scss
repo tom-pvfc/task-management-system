@@ -27,6 +27,8 @@
         height: 100%;
         width: 100%;
         margin-top: 20px;
+        justify-content: center;
+        align-items: center;
         &--title{
           
         }
@@ -35,6 +37,44 @@
             flex-direction: column;
             label{
                 width: 150px;
+            }
+        }
+        &--save{
+            margin: 5px 10px;
+            background-color: $color-5;
+            padding: 3px 8px;
+            border-radius: 5px;
+            width: 250px;
+            height: 55px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+            text-align:center;
+            color:$color-2;
+            cursor: pointer;
+            &:hover{
+              background-color: $color-4;
+              color: $color-1;
+            }
+        }
+        &--back{
+            margin: 5px 10px;
+            background-color: $color-4;
+            padding: 3px 8px;
+            border-radius: 5px;
+            width: 250px;
+            height: 55px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+            text-align:center;
+            color:$color-2;
+            cursor: pointer;
+            &:hover{
+              background-color: $color-5;
+              color: $color-1;
             }
         }
     }

@@ -53,37 +53,33 @@ export class HomePage extends React.Component<HomePageProps, HomePageState> {
         return (
             <div
                 className={`task-item animated zoomIn speed-8 delay-${idx % 5 }`}
-                key={"tablerows" + idx}                
-            >
+                key={"tablerows" + idx}>
                 <p>
                     {
                         item.taskSummary
                     }
                 </p>
-
                 <p>
                     {
                         item.priority
                     }
                 </p>
-
                 <p>
                     {
                         item.taskStatus
                     }
                 </p>
-
                 <div>
                     <LinkButton href={`/#task${idx}`}>
                         Edit Task
                     </LinkButton>
                 </div>
+                {/* to implement */}
                 {/* <div>
                     <LinkButton href={``}>
                         Delete
                     </LinkButton>
                 </div> */}
-                
             </div>
         )
     }
@@ -96,8 +92,6 @@ export class HomePage extends React.Component<HomePageProps, HomePageState> {
             return <Spinner />
         }
 
-        // console.log("home page data " , props.data)
-
         return (
             <MainLayout 
                 className="home-page"
@@ -107,7 +101,6 @@ export class HomePage extends React.Component<HomePageProps, HomePageState> {
                             Task List
                         </h1>
                         <div className="home-page__wrapper--table">
-
                             <div className="table__header">
                                 <div className="table__header--item">
                                     Task Summary

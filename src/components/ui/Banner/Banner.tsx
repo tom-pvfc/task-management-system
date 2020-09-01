@@ -3,6 +3,7 @@ import { RES_URL } from '../../../config';
 import { LinkButton } from '../Button/Button';
 
 const Banner = () => {
+    //loop thruogh nav data
     return (
         <div className="banner">
             <div className="banner__wrapper">

@@ -14,15 +14,15 @@ const MainLayout = (props) =>
                         title={title}
                     />
               </div>
-                    <div className="main-layout__wrapper--banner">
-                      <Banner />
-                    </div>
-                    <div className="main-layout__wrapper--maps">
-                       {
-                           props.children
-                       }
-                    </div>
+                <div className="main-layout__wrapper--banner">
+                    <Banner />
                 </div>
+                <div className="main-layout__wrapper--maps">
+                    {
+                        props.children
+                    }
+                </div>
+            </div>
         </div>
     )
 }
