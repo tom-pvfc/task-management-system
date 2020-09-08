@@ -1,8 +1,8 @@
 #__Tom Riley Task Management System__
 
 ##Getting started 
-1. install modules - npm install 
-2. run code with node fuse watch
+1. install node_modules using command npm install 
+2. run code in terminal with "npm run watch"
 
 ##Decisions 
 - Created data in the app.tsx and storing the dataset into redux to use in pages within the site
