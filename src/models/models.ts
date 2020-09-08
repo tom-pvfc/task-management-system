@@ -85,7 +85,7 @@ export interface iTaskData {
     priority: string;
     taskStatus: string;
     assignedTo?: string;
-    timestamp?: Date;
+    timestamp?: any;
     taskSummary: string;
     taskDescription:string;
 }

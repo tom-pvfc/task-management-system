@@ -2,7 +2,7 @@ import * as React from 'react';
 import MainHeader from '../../ui/MainHeader/MainHeader';
 import Banner from '../../ui/Banner/Banner';
 
-const MainLayout = (props) => 
+const MainLayout = (props:any) => 
 {
     let title = props.title;
 

@@ -120,7 +120,7 @@ export class TaskPage extends React.Component<TaskPageProps, TaskPageState> {
             console.log("FINAL RESULT " , items)
 
             this.props.saveData(items);
-            location.href = "/#";
+            window.location.href = "/#";
 
 
         }
@@ -135,7 +135,7 @@ export class TaskPage extends React.Component<TaskPageProps, TaskPageState> {
             console.log("FINAL RESULT " , data)
 
             this.props.saveData(data);
-            location.href = "/#";
+            window.location.href = "/#";
         }
 
       }

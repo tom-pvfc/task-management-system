@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch": "rm -Rf .fusebox && node fuse watch",
-    "publish": "rm -Rf .fusebox && node fuse publish",
+    "watch": "node fuse watch",
+    "publish": "node fuse publish",
+    "start": "react-scripts start",
     "webpack-watch": "NODE_ENV=development webpack -w --config webpack/dev.config.js",
     "webpack-publish": "NODE_ENV=production webpack -p --config webpack/prod.config.js"
   },
@@ -14,12 +15,14 @@
   "license": "ISC",
   "dependencies": {
     "@material-ui/core": "^4.10.2",
+    "@types/react-redux": "^7.1.9",
     "axios": "^0.18.0",
     "bluebird": "^3.5.3",
     "react": "^16.8.3",
     "react-dom": "^16.8.3",
     "react-redux": "^6.0.0",
     "react-router-dom": "^4.3.1",
+    "react-scripts": "3.4.3",
     "react-scrollable-anchor": "^0.6.1",
     "redux": "^4.0.1"
   },
@@ -38,5 +41,17 @@
     "typescript": "^3.3.3333",
     "uglify-es": "^3.3.9",
     "uglify-js": "^3.4.9"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }

@@ -22,7 +22,7 @@ export class Paginator extends React.Component<PaginatorProps, PaginatorState>{
     constructor(p:PaginatorProps){
         super(p);
         this.state = {
-            showState:this.props.showState, 
+        showState:this.props.showState ? this.props.showState : false, 
             totalPages:0,
             currentPageIdx:0
         }

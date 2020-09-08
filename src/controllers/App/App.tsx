@@ -47,7 +47,7 @@ class App extends React.Component<AppProps, inAppState>{
     }
 };
 
-function mapStateToProps(state: any, ownProps) {
+function mapStateToProps(state: any, ownProps:any) {
     return {
         appState: state.app
     }

@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-const MainHeader = (props) => {
+const MainHeader = (props:any) => {
     
     let title = props.title;
 

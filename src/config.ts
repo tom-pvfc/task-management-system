@@ -40,7 +40,7 @@ export const PUBLIC_URL = "";
 /**
  * If website is embed on another website
  */
-export const IS_EMBED = (location.href.indexOf("#embed") !== -1);
+export const IS_EMBED = (window.location.href.indexOf("#embed") !== -1);
 
 
 /**

@@ -138,7 +138,7 @@ export class HomePage extends React.Component<HomePageProps, HomePageState> {
     }
 }
 
-const mapStateToProps = (state: IStoreState, ownProps): Partial<HomePageProps> => {
+const mapStateToProps = (state: IStoreState, ownProps:any): Partial<HomePageProps> => {
     return {
         data: state.app.data
     }

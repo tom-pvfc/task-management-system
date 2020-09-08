@@ -6,26 +6,22 @@ export const APP_START = 0x0100000;
 
 
 export const NUMBER_FORMAT_FUNCTION = {
-    numberWithCommas: (x) => {
+    numberWithCommas: (x:number) => {
         let s: string = ".";
         return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, s);
     },
-    currencyNumber: (x, symbol) => {
+    currencyNumber: (x:any, symbol:string) => {
         x = parseInt(x).toFixed(0);
         return x === "£-" ? "N/A" : (x < 0 ? "-" : "") + symbol + Math.abs(x).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")
     },
-    decimal: (x, decimalPoints) => {
+    decimal: (x:number, decimalPoints:number) => {
         return parseFloat(x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")).toFixed(decimalPoints);
     },
-    percent: (x) => {
+    percent: (x:number) => {
         x = x * 100;
         return (x).toFixed(x < 1 ? 2 : x < 10 ? 1 : 0) + "%";
     },
-    seCurrency: (x, symbol) => {
-        x = parseInt(x).toFixed(0);
-        return x === "£-" ? "N/A" : (x < 0 ? "-" : "+") + symbol + Math.abs(x).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")
-    },
-    reverseCurrencyNumber: function (x, symbol) {
+    reverseCurrencyNumber: function (x:any, symbol:string) {
         x = parseInt(x).toFixed(0);
         return Math.abs(x).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + symbol;
     },
